@@ -15,7 +15,6 @@ body {
   color: #222;
 }
 
-/* ===== PROFILE CARD ===== */
 .profile-card {
   background: #fff;
   border-radius: 1rem;
@@ -32,7 +31,6 @@ body {
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== AVATAR ===== */
 .profile-avatar img {
   width: 120px;
   height: 120px;
@@ -42,7 +40,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* ===== NAME & BIO ===== */
 .profile-info h2 {
   font-size: 1.6rem;
   font-weight: 600;
@@ -63,7 +60,6 @@ body {
   color: #6b7280;
 }
 
-/* ===== SOCIAL LINKS ===== */
 .social-links {
   margin-top: 1.8rem;
 }
@@ -86,10 +82,9 @@ body {
   color: #1e40af;
 }
 
-/* ===== HOBBIES & DISLIKES ===== */
 .profile-sections {
   display: flex;
-  flex-direction: row; /* side-by-side even on small screens */
+  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -126,7 +121,6 @@ body {
   border-bottom: none;
 }
 
-/* ===== PROFILE HEADER (Bio + Avatar) ===== */
 .profile-header {
   display: flex;
   flex-direction: column;
@@ -134,7 +128,6 @@ body {
   gap: 1.5rem;
 }
 
-/* ===== Inline on md+ ===== */
 @media (min-width: 768px) {
   .profile-header {
     flex-direction: row;
