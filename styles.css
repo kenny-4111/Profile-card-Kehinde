@@ -15,11 +15,12 @@ body {
   color: #222;
 }
 
+/* ===== PROFILE CARD ===== */
 .profile-card {
   background: #fff;
   border-radius: 1rem;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
+  max-width: 700px;
   width: 100%;
   padding: 2.5rem 2rem;
   text-align: center;
@@ -31,6 +32,7 @@ body {
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 
+/* ===== AVATAR ===== */
 .profile-avatar img {
   width: 120px;
   height: 120px;
@@ -40,7 +42,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Name and Bio */
+/* ===== NAME & BIO ===== */
 .profile-info h2 {
   font-size: 1.6rem;
   font-weight: 600;
@@ -61,6 +63,7 @@ body {
   color: #6b7280;
 }
 
+/* ===== SOCIAL LINKS ===== */
 .social-links {
   margin-top: 1.8rem;
 }
@@ -83,12 +86,14 @@ body {
   color: #1e40af;
 }
 
-/* Hobbies and Dislikes */
+/* ===== HOBBIES & DISLIKES ===== */
 .profile-sections {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+  flex-direction: row; /* side-by-side even on small screens */
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
   margin-top: 2.5rem;
 }
 
@@ -98,6 +103,7 @@ body {
   padding: 1.2rem 1.5rem;
   width: 100%;
   max-width: 280px;
+  text-align: center;
 }
 
 .profile-list h3 {
@@ -120,11 +126,29 @@ body {
   border-bottom: none;
 }
 
+/* ===== PROFILE HEADER (Bio + Avatar) ===== */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* ===== Inline on md+ ===== */
 @media (min-width: 768px) {
-  .profile-sections {
+  .profile-header {
     flex-direction: row;
     justify-content: center;
-    align-items: stretch;
-    gap: 2.5rem;
+    text-align: left;
+  }
+
+  .profile-info {
+    text-align: left;
+    flex: 1;
+  }
+
+  .profile-sections {
+    justify-content: center;
+    gap: 2rem;
   }
 }
