@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: linear-gradient(135deg, #e0e7ff, #f9fafb);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  color: #222;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.profile-avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #3b82f6;
+  margin-bottom: 1rem;
+}
+
+/* Name and Bio */
+.profile-info h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.profile-bio {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-top: 0.75rem;
+  padding: 0 1rem;
+}
+
+.profile-time {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.social-links {
+  margin-top: 1.8rem;
+}
+
+.social-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #3b82f6;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.social-links a:hover {
+  color: #1e40af;
+}
+
+/* Hobbies and Dislikes */
+.profile-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.profile-list {
+  background: #f3f4f6;
+  border-radius: 0.75rem;
+  padding: 1.2rem 1.5rem;
+  width: 100%;
+  max-width: 280px;
+}
+
+.profile-list h3 {
+  color: #1f2937;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.profile-list ul {
+  list-style: none;
+  color: #374151;
+}
+
+.profile-list li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.profile-list li:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  .profile-sections {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2.5rem;
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <article data-testid="test-profile-card" class="profile-card">
+      <header class="profile-header">
+        <figure class="profile-avatar">
+          <img
+            src="https://scontent.flos2-1.fna.fbcdn.net/v/t39.30808-6/549468959_2817411878454771_3705057912117623397_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHLIBLZ9OhBBE5YLxFvVy-ii8hTC6eLCOKLyFMLp4sI4qxz730bZ2iGrE_mSAP2hQEonkxCZ-cMa87-OlXq5Kvo&_nc_ohc=JAborPCaghUQ7kNvwHmJGgA&_nc_oc=AdlvixEYOjvXCRJ4uAShqJxLAJGTJAn1mS1rfiBa6fw6aVVFT0ty8w79NSMGPc7-NB0&_nc_zt=23&_nc_ht=scontent.flos2-1.fna&_nc_gid=jAtRTCPyAw82ZR_p0Sq96Q&oh=00_AffQoCYX3U9UlaUqVAf5gOX28sWdicTiW4RsZu-iI_JvCg&oe=68F6859E"
+            alt="Kehinde Oluyole"
+            data-testid="test-user-avatar" />
+        </figure>
+        <div class="profile-info">
+          <h2 data-testid="test-user-name">Kehinde Oluyole</h2>
+          <p data-testid="test-user-bio" class="profile-bio">
+            A passionate web developer who enjoys building clean, modern, and
+            accessible interfaces using HTML, CSS, and JavaScript.
+          </p>
+          <p data-testid="test-user-time" class="profile-time">
+            Current time (ms): <span id="time"></span>
+          </p>
+        </div>
+      </header>
+
+      <nav data-testid="test-user-social-links" class="social-links">
+        <ul>
+          <li>
+            <a
+              href="https://web.facebook.com/oluyole.kehinde"
+              data-testid="test-user-social-facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/kenny-4111"
+              data-testid="test-user-social-github"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/oluyole-providence-3913a9355/"
+              data-testid="test-user-social-linkedin"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="profile-sections">
+        <section data-testid="test-user-hobbies" class="profile-list">
+          <h3>Hobbies</h3>
+          <ul>
+            <li>Reading tech blogs</li>
+            <li>Coding side projects</li>
+            <li>Playing guitar</li>
+          </ul>
+        </section>
+
+        <section data-testid="test-user-dislikes" class="profile-list">
+          <h3>Dislikes</h3>
+          <ul>
+            <li>Unoptimized code</li>
+            <li>Cluttered UIs</li>
+            <li>Procrastination</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
