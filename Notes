@@ -1,0 +1,39 @@
+# Notes
+
+## Testing Summary
+
+1. **Timestamp (`Date.now`)**
+   - Displays the current time in milliseconds.
+   - Updates every second using `setInterval()`.
+   - Verified accuracy by checking `Date.now()` value in console.
+
+2. **Accessibility**
+   - Avatar includes descriptive `alt` text.
+   - All links are keyboard-focusable.
+   - Social links open in a new tab (`target="_blank"`) with `rel="noopener noreferrer"`.
+
+3. **Responsiveness**
+   - Tested at different breakpoints:
+   - Mobile: content stacks vertically.
+   - Layout adjusts fluidly using Flexbox and media queries.
+
+4. **Testing IDs**
+   - Every visible element includes a `data-testid` attribute for automated tests:
+     ```
+     test-profile-card
+     test-user-name
+     test-user-bio
+     test-user-avatar
+     test-user-social-links
+     test-user-hobbies
+     test-user-dislikes
+     test-user-time
+     ```
+
+---
+
+## Additional Notes
+- No external libraries or frameworks were used — only HTML, CSS, and vanilla JavaScript.
+- Code follows semantic HTML standards (`article`, `section`, `nav`, `figure`).
+- Hosted on GitHub Pages for easy live preview.
+
