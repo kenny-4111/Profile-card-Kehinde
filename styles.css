@@ -14,6 +14,50 @@ body {
   padding: 1.5rem;
   color: #222;
 }
+.main-nav {
+  background: #1e3a8a;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.nav-logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-links a {
+  color: #e0e7ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
 
 .profile-card {
   background: #fff;
@@ -128,6 +172,73 @@ body {
   gap: 1.5rem;
 }
 
+/* Contact us styling */
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1e3a8a;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: border 0.25s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #1e3a8a;
+}
+
+button.submit-btn {
+  background: #1e3a8a;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+button.submit-btn:hover {
+  background: #3746c1;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.success-message {
+  color: #16a34a;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
 @media (min-width: 768px) {
   .profile-header {
     flex-direction: row;
@@ -143,5 +254,121 @@ body {
   .profile-sections {
     justify-content: center;
     gap: 2rem;
+  }
+}
+
+/*About styling*/
+
+.about-page {
+  max-width: 1000px;
+  margin: 4rem auto 4rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.about-header p {
+  color: #4b5563;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about-section {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  border-left: 5px solid #1e3a8a;
+}
+
+.about-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+}
+
+.about-section h2 {
+  color: #1e3a8a;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.4rem;
+  width: fit-content;
+}
+
+.about-section p,
+.about-section li {
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.about-section ul {
+  margin-top: 0.8rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-section ul li {
+  background: #f3f4f6;
+  margin-bottom: 0.6rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.about-section ul li:hover {
+  background: #e0e7ff;
+  transform: translateX(6px);
+}
+
+.about-section.bio {
+  border-left-color: #3b82f6;
+}
+
+.about-section.goals {
+  border-left-color: #2563eb;
+}
+
+.about-section.confidence {
+  border-left-color: #f59e0b;
+}
+
+.about-section.future-note {
+  border-left-color: #10b981;
+}
+
+.about-section.extra {
+  border-left-color: #8b5cf6;
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .about-section {
+    padding: 1.5rem;
+  }
+
+  .about-header h1 {
+    font-size: 2rem;
   }
 }
